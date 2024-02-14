@@ -1,0 +1,203 @@
+/* STICKY HEADER + FOOTER CODE */
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #045d5d;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header.page-header, footer.page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: #ffffff;
+    color: black;
+  }
+
+  main.page-body {
+    flex-grow: 1; /*Takes The Avaible Place*/
+    padding: 0 10px;
+    background-color: #ffffff;
+    color: black;
+  }
+
+  /* END STICKY HEADER + FOOTER CODE */
+
+  /* HEADER CODE */
+
+   /* Header Settings */
+   .page-header {
+    overflow: hidden;
+    margin: 8px;
+    height: 145px;
+  }
+  
+  /* Links In Header Code */
+  .page-header a {
+    color: black;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+  }
+  
+  /* Background Of Links In Header While Hoover */
+  .page-header a:hover {
+    background-color: #C0A9BD;
+    color: black;
+  }
+  
+  /* Active Link In Header*/
+  .page-header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Logo Position Setting */
+  .header-left {
+    padding: -25px;
+    border-radius: 30px;
+    background-color: purple;
+    border: 3px solid #000000;
+    margin-left: 20px;
+    margin-top: -15px;
+    float: left;
+  }
+  
+  .header-left {
+    margin-top: -20px;
+    margin-left: 115px;
+    display: block;
+  }
+
+  .icons-header {
+    float: right;
+    margin-top: -70px;
+  }
+  
+  .icons-header img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  /*Float Left Classes */
+  .headerbutton {
+    float: left;
+  }
+
+  /*END OF HEADER CODE */
+
+  /* SEARCH BAR CODE*/
+
+  .search-container {
+    text-align: center;
+  }
+  
+  /*Input Search Box Code*/
+  input[type="text"] {
+    padding: 10px;
+    font-size: 15px;
+    width: 350px;
+    margin-left: -480px;
+    margin-top: 20px;
+    
+  }
+  
+  /*Submitt Search Comment Button Code*/
+  button {
+    padding: 12px 15px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 140px;
+    border-radius: 15px;
+  }
+  
+  /*Menu Code */
+  #mymenu {
+    width: 0;
+  }
+  
+  .menubar {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .menubar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menubar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .menubar {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  /* END SEARCH BAR CODE*/
+
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer a {
+    text-decoration: none;
+    color: #ed0404
+  }
+  
+  
+  /*All The Flex Properties */
+  .around { 
+      justify-content: space-around; 
+  }
+        
+  .row { 
+      flex-direction: row; 
+  }
+        
+  .wrap { 
+      flex-wrap: wrap; 
+  }
+        
+  .nowrap { 
+      flex-wrap: nowrap; 
+  }
+        
+  .reverse { 
+      flex-wrap: wrap-reverse; 
+  }
